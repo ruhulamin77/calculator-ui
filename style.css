@@ -23,7 +23,6 @@ body {
   display: grid;
   justify-content: center;
   align-content: center;
-  /* min-height: 85vh; */
   grid-template-columns: repeat(4, 70px);
   grid-template-rows: minmax(120px, auto) repeat(5, 70px);
   background-color: #1e2935;
@@ -38,20 +37,8 @@ body {
   border: 0;
   outline: none;
   border-radius: 15px;
-  /* background: #18212a; */
   background-color: #1e2935;
   color: rgb(207, 213, 213);
-}
-.calculator_grid > button.dot_btn {
-  font-weight: 900;
-}
-.calculator_grid > button#all-clear,
-button#delete {
-  font-size: 1.1rem;
-}
-.calculator_grid > button#equals {
-  background-color: #253241;
-  border-radius: 50px 0 10px 0;
 }
 .calculator_grid > button.operator {
   border-radius: 50%;
@@ -60,7 +47,7 @@ button#delete {
   height: 40px;
   width: 40px;
   line-height: 40px;
-  margin-top: 20px;
+  margin-top: 15px;
   margin-left: 10px;
   font-weight: 500;
 }
@@ -72,6 +59,18 @@ button#delete {
   background-color: unset;
   font-weight: 400;
   line-height: -10px;
+}
+
+.calculator_grid > button.dot_btn {
+  font-weight: 900;
+}
+.calculator_grid > button#all-clear,
+button#delete {
+  font-size: 1.1rem;
+}
+.calculator_grid > button#equals {
+  background-color: #253241;
+  border-radius: 50px 0 10px 0;
 }
 
 .calculator_grid > button:hover {
@@ -93,7 +92,6 @@ button#delete {
   padding: 0 10px;
   word-wrap: break-word;
   margin: 15px;
-  /* color: #1e2935; */
 }
 .output .previous_operant {
   color: rgba(255, 255, 255, 0.75);
